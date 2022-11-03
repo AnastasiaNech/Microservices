@@ -12,8 +12,10 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using PlatformService.AsyncDataServices;
 using PlatformService.Data;
 using PlatformService.SyncDataServices.Http;
+using Sentry;
 
 namespace PlatformService
 {
@@ -30,12 +32,13 @@ namespace PlatformService
 
         public void ConfigureServices(IServiceCollection services)
         {
-           Console.WriteLine("--> Using SqlServer Db");              
-           services.AddDbContext<AppDbContext>(opt =>
-              opt.UseSqlServer(Configuration.GetConnectionString("PlatformsConn")));
+            Console.WriteLine("--> Using SqlServer Db");
+            services.AddDbContext<AppDbContext>(opt =>
+               opt.UseSqlServer(Configuration.GetConnectionString("PlatformsConn")));
 
             services.AddScoped<IPlatformRepo, PlatformRepo>();
             services.AddHttpClient<ICommandDataClient, HttpCommandDataClient>();
+            services.AddSingleton<IMessageBusClient, MessageBusClient>();
 
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
@@ -61,8 +64,7 @@ namespace PlatformService
 
             app.UseRouting();
 
-            app.UseAuthorization();
-
+            //app.UseSentryTracing();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

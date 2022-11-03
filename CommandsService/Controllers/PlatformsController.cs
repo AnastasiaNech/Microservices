@@ -4,6 +4,7 @@ using AutoMapper;
 using CommandsService.Data;
 using CommandsService.Dtos;
 using Microsoft.AspNetCore.Mvc;
+using Sentry;
 
 namespace CommandsService.Controllers
 {
@@ -23,12 +24,13 @@ namespace CommandsService.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<PlatformreadDto>> GetPlatforms()
         {
-            Console.WriteLine("--> Getting Platforms from CommandsService");
 
-            var platformItems = _repository.GetAllPlatforms();
-
-            return Ok(_mapper.Map<IEnumerable<PlatformreadDto>>(platformItems));
+                Console.WriteLine("--> Getting Platforms from CommandsService");
+                var platformItems = _repository.GetAllPlatforms();
+                return Ok(_mapper.Map<IEnumerable<PlatformreadDto>>(platformItems));          
         }
+
+
 
         [HttpPost]
         public ActionResult TestInboundConnection()

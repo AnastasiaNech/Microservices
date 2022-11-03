@@ -1,0 +1,33 @@
+2022-10-20 15:45:59.803 +03:00 [INF] Now listening on: https://localhost:6001
+2022-10-20 15:45:59.824 +03:00 [INF] Now listening on: http://localhost:6000
+2022-10-20 15:45:59.826 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-20 15:45:59.827 +03:00 [INF] Hosting environment: Development
+2022-10-20 15:45:59.829 +03:00 [INF] Content root path: D:\Microservices\CommandsService
+2022-10-20 15:47:03.352 +03:00 [INF] Application is shutting down...
+2022-10-20 15:47:03.371 +03:00 [INF] Stopped cleanly
+2022-10-20 15:47:22.644 +03:00 [INF] Now listening on: https://localhost:6001
+2022-10-20 15:47:22.664 +03:00 [INF] Now listening on: http://localhost:6000
+2022-10-20 15:47:22.665 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-20 15:47:22.666 +03:00 [INF] Hosting environment: Development
+2022-10-20 15:47:22.667 +03:00 [INF] Content root path: D:\Microservices\CommandsService
+2022-10-20 15:53:01.499 +03:00 [INF] Now listening on: https://localhost:6001
+2022-10-20 15:53:01.520 +03:00 [INF] Now listening on: http://localhost:6000
+2022-10-20 15:53:01.521 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-20 15:53:01.522 +03:00 [INF] Hosting environment: Development
+2022-10-20 15:53:01.523 +03:00 [INF] Content root path: D:\Microservices\CommandsService
+2022-10-20 15:53:04.931 +03:00 [INF] Application is shutting down...
+2022-10-20 15:53:04.949 +03:00 [INF] Stopped cleanly
+2022-10-20 15:53:07.893 +03:00 [INF] Now listening on: https://localhost:6001
+2022-10-20 15:53:07.914 +03:00 [INF] Now listening on: http://localhost:6000
+2022-10-20 15:53:07.914 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-20 15:53:07.915 +03:00 [INF] Hosting environment: Development
+2022-10-20 15:53:07.916 +03:00 [INF] Content root path: D:\Microservices\CommandsService
+2022-10-20 15:53:37.825 +03:00 [INF] Application is shutting down...
+2022-10-20 15:53:37.845 +03:00 [INF] Stopped cleanly
+2022-10-20 15:53:41.510 +03:00 [INF] Now listening on: https://localhost:6001
+2022-10-20 15:53:41.531 +03:00 [INF] Now listening on: http://localhost:6000
+2022-10-20 15:53:41.531 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2022-10-20 15:53:41.532 +03:00 [INF] Hosting environment: Development
+2022-10-20 15:53:41.532 +03:00 [INF] Content root path: D:\Microservices\CommandsService
+2022-10-20 15:54:57.371 +03:00 [INF] Application is shutting down...
+2022-10-20 15:54:57.389 +03:00 [INF] Stopped cleanly
